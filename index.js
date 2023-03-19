@@ -4,7 +4,8 @@ const searchTitle = document.getElementById("movie-search")
 const searchMovies = document.getElementById("search-movies")
 const myWatchlist = document.getElementById("watchlist")
 const mainDiv = document.getElementById("main")
-
+const addToWatchlist = document.getElementById("add")
+const container =  document.getElementById("container")
 
 
 searchBtn.addEventListener("click", ()=> { 
@@ -29,16 +30,14 @@ function renderMovie(){
    <div class="rating"<h4>${data.imdbRating}</h4></div>
    <div class="duration"><h4>${data.Runtime}</h4></div>
    <div class="genre"><h4>${data.Genre}</h4></div>
-   <div class="add"><h4>Add to watchlist</h4></div>
+   <div class="add" id="add" onclick="watchList()"><h4>Add To Watchlist</h4></div>
    <div class="plot"<p>${data.Plot}</p></div>
    `
 })
 }
 
 
-function watchlist(){
-    
-}
+let movieArray = []
 
 
     searchMovies.addEventListener("click", function(){
@@ -57,3 +56,7 @@ function watchlist(){
 })
 
 
+
+function watchList(){
+  movieArray.push(renderMovie())
+}
