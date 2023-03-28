@@ -88,7 +88,7 @@ button {
     display: flex;
     align-items: center;
     gap: 20px;
-   background: #1c1c1c;
+    background: #1c1c1c;
     width: 80%;
     margin-left: 4em;
     border-radius: 10px;
@@ -125,7 +125,7 @@ button {
    }
   
 
-.add {
+.add, .remove {
    right: 0;
    margin-right: 1em;
 }
@@ -137,6 +137,10 @@ button {
 
 .hidden {
     display: none;
+}
+
+.fa-solid{
+    margin-right: 0.3em;
 }
 
 

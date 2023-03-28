@@ -98,7 +98,7 @@ function watchList(event) {
   JSON.parse(localStorage.getItem('watchlist'));
        selectedMovies.innerHTML += `
      <div class="movie-div" id="movie-div">
-    <img class="poster" src="${movie.poster}" alt="${movie.title}">
+    <img class="poster" src="${movie.poster}" >
     <div class="second-div">
     <div class="title">
     <h3 class="movie-title">${movie.title}</h3>
