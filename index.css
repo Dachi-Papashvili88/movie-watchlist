@@ -1,4 +1,5 @@
 html, body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
@@ -101,13 +102,8 @@ button {
     gap: 5px;
 }
 
- .length {
+ .length, .title {
     justify-content:space-between;
-}
-
-.title {
-    justify-content:space-between;
-
 }
 
 
@@ -144,7 +140,42 @@ button {
 }
 
 
+@media(max-width: 500px){
+    .poster {
+        height: 35vh;
+        width: 40%;
+        padding: 0;
+        margin-left: 0.5em;
+    }
+    .first-div, .movie-div {
+        width: 95%;
+    }
 
+    .title {
+        font-size: 1rem;
+    }
+
+    .rating {
+        margin-right: 1.5em;
+        }
+
+    .watchlist, .search-movies {
+         font-size: 1rem;
+        }
+    h4, .plot {
+        font-size: 0.9rem
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px){
+    .poster {
+        height: 35vh;
+        width: 40%;
+        margin-left: 0.5em;
+    }
+    
+}
 
 
 
